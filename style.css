@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: inline-block;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+    margin-top: 80px; /* Adjust based on header height */
+    flex: 1;
+}
+
+.info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    text-align: left;
+    max-width: 400px; /* Adjust as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info p {
+    margin: 10px 0;
+}
+
+.info button {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    background-color: #28a745; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.info button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.footer {
+    background-color: white;
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.loading-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .loading-spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #218838;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 2s linear infinite;
+            margin-bottom: 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+  button {
+            background-color: #218838;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button p {
+            margin: 0;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
